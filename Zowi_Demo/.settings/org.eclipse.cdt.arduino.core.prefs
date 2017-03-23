@@ -1,2 +1,2 @@
 eclipse.preferences.version=1
-libraries=[{"package"\:"arduino","platform"\:"avr","library"\:"EEPROM"},"Servo"]
+libraries=["Bitbloq US","Bitbloq Zowi","Bitbloq Battery Reader","Bitbloq LED Matrix",{"package"\:"arduino","platform"\:"avr","library"\:"EEPROM"},"Servo","Bitbloq Oscillator"]

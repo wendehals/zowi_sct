@@ -6,7 +6,7 @@
 #include <Arduino.h>
 #include "../src-gen/HardwareConnector.h"
 #include "../src-gen/Zowi_Demo.h"
-#include "../libs/BitbloqZowi.h"
+#include <BitbloqZowi.h>
 
 //---------------------------------------------------------
 //-- Configuration of pins where the servos are attached
