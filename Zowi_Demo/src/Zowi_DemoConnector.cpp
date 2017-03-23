@@ -39,7 +39,7 @@ void Zowi_DemoConnector::syncState() {
 		zowi->setRestState(false);
 	}else{
 		zowi->putMouth(lineMouth);
-		zowi->sing(S_sleeping);
+		zowi->home();
 		zowi->setRestState(true);
 	}
 	if (statemachine->get_welcome()) {
@@ -51,7 +51,7 @@ void Zowi_DemoConnector::syncState() {
 		zowi->walk(MEDIUM_SPEED, FORWARD);
 	}
 	if (statemachine->get_turnLeft()) {
-		zowi->putMouth(smallSurprise);
+		zowi->putMouth(bigSurprise);
 		zowi->sing(S_OhOoh);
 		zowi->turn(MEDIUM_SPEED, LEFT);
 	}
@@ -65,9 +65,9 @@ uint8_t Zowi_DemoConnector::prepareSleepMode() {
 }
 
 bool Zowi_DemoConnector::obstacleDetected() {
-	return zowi->getDistance() < 15;
+	return zowi->getDistance() < 20;
 }
 
 bool Zowi_DemoConnector::noiseDetected() {
-	return zowi->getNoise() > 30;
+	return zowi->getNoise() > 700;
 }

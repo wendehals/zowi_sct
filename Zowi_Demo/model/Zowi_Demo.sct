@@ -6,7 +6,7 @@
         <outgoingTransitions xmi:id="_ZqdrLQ8UEeeAv-XNrAmWrg" target="_qqsR8A8UEeeAv-XNrAmWrg"/>
       </vertices>
       <vertices xsi:type="sgraph:State" xmi:id="_qqsR8A8UEeeAv-XNrAmWrg" specification="entry/&#xD;&#xA;awake = true" name="Awake" incomingTransitions="_ZqdrLQ8UEeeAv-XNrAmWrg _5ELgAA8UEeeAv-XNrAmWrg">
-        <outgoingTransitions xmi:id="_2YA0sA8UEeeAv-XNrAmWrg" specification="after 20s" target="_03HCoA8UEeeAv-XNrAmWrg"/>
+        <outgoingTransitions xmi:id="_2YA0sA8UEeeAv-XNrAmWrg" specification="after 15s" target="_03HCoA8UEeeAv-XNrAmWrg"/>
         <regions xmi:id="_qqtgEg8UEeeAv-XNrAmWrg" name="walkAndAvoidObstacles">
           <vertices xsi:type="sgraph:State" xmi:id="_u_7z7A8UEeeAv-XNrAmWrg" specification="entry/&#xD;&#xA;welcome = true&#xD;&#xA;exit/&#xD;&#xA;welcome = false" name="Welcome" incomingTransitions="_wux7UA8UEeeAv-XNrAmWrg">
             <outgoingTransitions xmi:id="_u_8a8g8UEeeAv-XNrAmWrg" specification="after 3s" target="_u_-QIA8UEeeAv-XNrAmWrg"/>
