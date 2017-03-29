@@ -11,8 +11,7 @@ Zowi_DemoConnector::Zowi_DemoConnector(Zowi_Demo* statemachine) {
  * Initialize the hardware.
  */
 void Zowi_DemoConnector::init() {
-	// Set the servo pins
-	zowi->init(PIN_YL, PIN_YR, PIN_RL, PIN_RR, true);
+	zowi->init();
 	zowi->home();
 
 	syncState();
